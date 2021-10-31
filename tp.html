@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易管理统计（注意：web3.0 tp demo）</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="web3/tp_web3.js"></script>
+</head>
+<body>
+    <input type="text" id="txtAlt" />
+
+    <input type="button" value="测试提交" id="btnAction" />
+
+
+    <script type="text/javascript">
+
+        if (tp.isConnected()) {
+            $("#txtAlt").val("1");
+        }
+        else {
+            $("#txtAlt").val("2");
+        }
+       
+    </script>
+
+</body>
+</html>
